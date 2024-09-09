@@ -1,0 +1,48 @@
+/* Modal.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal {
+    background: #333; /* Darker modal background */
+    color: #f5f5f5; /* Light text color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Darker shadow */
+    text-align: center;
+    max-width: 500px; /* Optional: control max width of modal */
+    width: 90%; /* Responsive width up to max-width */
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.confirmButton, .cancelButton {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.confirmButton {
+    background-color: #28a745; /* Bright green button */
+    color: #fff;
+}
+
+.cancelButton {
+    background-color: #dc3545; /* Bright red button */
+    color: #fff;
+}
